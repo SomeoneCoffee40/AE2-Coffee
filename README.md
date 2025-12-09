@@ -9,6 +9,8 @@ This is a data storytelling project where you will discover a different side of 
 4. Coffee Weather Data: https://www.kaggle.com/datasets/escstockholm/coffee-data-set?select=Coffee_Data_Set.csv
 
 ### How to Run
+You can look at the Github Page-hosted site here: 
+OR....you can
 1. Download all the relevant datasets and place them in the directory.
 2. Run data_prep.ipynb, a new directory, Clean_Data, will appear.
 2. Run data_vis.ipynb and place the resulting JSON files in the same folder as the index.html, script.js and style.css files.
