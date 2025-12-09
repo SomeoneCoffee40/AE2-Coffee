@@ -55,7 +55,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(44, 36, 27, 0.7), rgba(44, 36, 27, 0.9)), url('cover.png');
+    background: linear-gradient(rgba(44, 36, 27, 0.7), rgba(44, 36, 27, 0.9)), url('images/cover.png');
     background-size: cover;
     background-position: center;
     padding: 20px;
