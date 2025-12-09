@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beans, Borders, and Bets</title>
+    
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1 class="fade-in">Beans, Borders, and Bets</h1>
+        <p class="fade-in" style="font-size: 1.5rem; font-style: italic; margin-top: 0;">A Visual Journey into the Global Coffee Market</p>
+    </header>
+
+    <div class="container">
+        
+        <section class="fade-in">
+            <h2>Introduction</h2>
+            <p>We have all been loyal customers of the most beloved and therefore the biggest coffee franchises in the world, from Pret to Blank Street Coffee and of course in most places around the world Starbucks. City life is synonymous with coffee, where coffee shops sell overpriced diluted caffeine and serve as a meeting spot for people of all walks of... city life, from students, to professors, to accountants and influencers.</p> 
+            
+            <p>But the origins of our £5 large decaf iced latte with two pumps of vanilla extract, berry topping and of course, oatmilk, are more complex and even darker than most people realise. This story is a visual exploration of a realer side of one of the western world's most beloved products: your morning latte (or espresso if you know what you're talking about). If you are from the city it is more than likely that you interact with the coffee industry on a daily basis, this exploration will help you understand that other side of the industry: the complex trading network, unequal economics and deeply impactful financial products that form the coffee industry.</p>
+            <h2>Chapter 1 - The Coffee Market</h2>
+            <p>Nestled deep inside Brazil's state of Minas Gerais lives one of the more than 220,000 coffee farms in the country. Sitio da Torre is a small family owned specialty coffee producer that has been around for 4 family generations. Our story of coffee starts here, with the people that produce it. Coffee like most products is a human endeavour, importantly it is a very human-intensive endeavour. Unlike wheat or soy, coffee has not been fully industrialized as the terrain where coffee grows is steep and uneven. This is why yearly the 65 hectare site of Sitio da Torre only produces 1,500 bags of coffee or around 9,000 kg (Sitiodatorre.com.br, 2025). This is also the reason why the coffee industry, again, unlike the wheat or soy industry, relies on the coordination of around 12.5 million independent farms around the 'bean belt' spanning around 50 countries to meet the world's 10 billion kilogram thirst for the productive-morning drink (Fairtrade.net, 2019).</p>
+        </section>
+
+        <figure class="fade-in">
+            <img src="images/da_torre.png" alt="Sitio da Torre Farm - Minas Gerais, Brazil">
+            <figcaption>A view of the 65 Hectare Sitio da Torre farm (left), and the current generation of farmers (right).</figcaption>
+        </figure>
+    </div>
+
+    <div class="full-width-container fade-in">
+        <div id="vis-production-map" class="chart-wrapper"></div>
+        <p class="chart-caption">Figure 1: Global Coffee Production Intensity (1990-2018). Use the slider to animate changes over time.</p>
+    </div>
+
+    <div class="container">
+        <section class="fade-in">
+            <p>The coffee belt is an area just below the equator that provides the perfect conditions to grow coffee. The belt includes around 50 countries, where Brazil followed by Vietnam and Colombia produce more than 50% of the world's coffee. In total around 169.35 Million 60 KG bags of coffee are produced every year (USDA, 2024). As you can see, through time this production has increased - industrialization and massive capital injections have increased production.</p>
+            
+            <p>Importantly coffee producers are actually not coffee drinkers. Although pride for their produced coffee - Colombian Coffee, or Mexican Chiapaneco - exists, the coffee belt's countries are not even massive coffee drinkers! So who consumes most energy beans?</p>
+        </section>
+    </div>
+
+    <div class="full-width-container fade-in">
+        <div id="vis-consumers-sankey" class="chart-wrapper" style="background-color: #2c241b;"></div>
+        <p class="chart-caption">Figure 2: Global Coffee Trade Flows (2013). Tracing beans from top producers to top consumers.</p>
+    </div>
+
+    <div class="container">
+        <section class="fade-in">
+            <p>As you can see in figure 2, coffee is drank in high income countries by high earners around the world. More importantly coffee is an inelastic good which means that increases in prices have a little effect on demand. The problem is that global warming, has induced massive strains on coffee producers, now the 12.5 million farms in the world have a much more difficult time producing the same amount of coffee that keeps the world happy and productive. As previously stated it has been industrialization through massive capital injections that have kept production up. This of course means that the price for coffee has increased.</p>
+        </section>
+    </div>
+
+    <div class="full-width-container fade-in">
+        <div id="vis-price-line" class="chart-wrapper"></div>
+        <p class="chart-caption">Figure 3: The Price of Scarcity. Retail price growth vs Global Production.</p>
+    </div>
+
+    <div class="container">
+        <section class="fade-in">
+            <p>But coffee, as I have already said, makes people happy and productive - much like alcohol or cigarettes. Coffee drinkers are more than willing to pay more for the same coffee they drink. The result? A strained market. Coffee producers have a harder time producing the same amount of coffee - in many farms supply is decreasing. Less coffee means higher coffee prices, but demand for coffee has increased.</p>
+
+            <p>So the coffee market today is a strained market. Harder and more expensive to produce, increasing prices and not strangely increasing demand! So what are the underlying reasons for why coffee is harder to produce today - why producing it is more expensive and requires more equipment and technology? You see, the coffee market is subject to perhaps the one untameable creature in nature: weather. Global warming has brought with it fewer and unpredictable weather patterns accross the coffee belt, causing coffee supply to fluctuate (Hhc.earth, 2025). Coffee plants are particularly sensible to water levels, too much water and coffee tastes watery, too little and ... they simply die.</p>
+
+            <p>Robusta coffee for example, mainly produced in Vietnam, once though to be highly weather resistant is now known to be particularly vulnerable to droughts - with the environmental effect of 'El Niño', droughts have exacerbated, and with that Robusta production has dwindled (Byrareddy et al., 2021).</p>
+        </section>
+
+        <section class="fade-in">
+            <h2>Chapter 2 - The Curse of Weather and the Perils of Climate Change</h2>
+            <p>There are many types of wild coffee plants, out of all of them, only two are useful for consumption: Arabica and Robusta. Arabica is the most priced coffee type, mainly grown in Brazil, it is the coffee bean most high end coffee shops serve. Robusta on the other hand is the most consumed coffee bean in the world, it being the primary source of instant coffee and espresso. This simple and once wild beans are... sensitive. While Arabica is more sensitive than Robusta, both require specific temperature, elevation, rainfall and microclimates to grow. Arabica grows in the range of 18C to 22C and requires ~1,200–1,700 mm/year of rain (Coffeeandhealth.org, 2025). Robusta tolerates higher temperatures, from 22-28 °C and needs ~2,000-2,500 mm/year of rain with good humidity (Agriculture Institute, 2023).</p>
+        </section>
+    </div>
+
+    <div class="full-width-container fade-in">
+        <div id="vis-weather" class="chart-wrapper"></div>
+        <p class="chart-caption">Figure 4: Drifting out of the Goldilocks Zone. Rainfall and Temperature shifts (2000-2018).</p>
+    </div>
+
+    <div class="container">
+        <section class="fade-in">
+            <p>So... we now have an understanding of where the coffee market stands. Figure 4 shows how hard it is to reliably produce coffee - temperature and humidity massively fluctuate, and while production is still increasing it is no doubt becoming ever more variable. Coffee prices have increased, and yet, people in the cities are still buying coffee. One would assume that the increases in price would also signal increases in the amount of money farmers are paid. Well, that is not really the case. You see we live in a world plagued by inequality - just look around. The coffee market is no different.</p>
+        </section>
+
+        <section class="fade-in">
+            <h2>Chapter 3 - The Plague of Inequality</h2>
+        </section>
+    </div>
+
+    <div class="full-width-container fade-in">
+        <div id="vis-inequality" class="chart-wrapper"></div>
+        <p class="chart-caption">Figure 5: The Shrinking Farmer's Share. Retail price vs. Price paid to growers.</p>
+    </div>
+
+    <div class="container">
+        <section class="fade-in">
+            <p>While coffee prices have increased, the amount paid to farmers has remained basically constant throughout the belt. With highly unpredictable and extreme weather patterns farmers now work longer hours and face more uncertainty - yet their pay remains the same: a minor proportion of the total retail price. In the end, it is of course, farmers who should hold the most power in the coffee market. But the reality is very different.</p>
+        </section>
+
+        <section class="fade-in">
+            <h2>Chapter 4 - The Power of the Hedge and a Divided Market</h2>
+            <p>Today, coffee is not only a natural bean that contains valued caffeine, it is a full financial product. And, as a financial product, farmers now participate in a different market driven by different forces. In practice, coffee farmers are willing to receive 'less' from the retail price of coffee because, as many other farmers, they rarely deal with the Starbucks' and Pret's of the world. You can think of coffee as having two different markets. The first is the one you interact with every time you order a coffee at the counter. The second is the one where farmers sell their coffee. At the end, the amount farmers are paid is determined by the shorting and longing of coffee futures - contracts that set the price of a future sale of coffee in today's prices, removing the farmers' and the buyers' uncertainty. This is called <strong>hedging</strong>. So yes, farmers receive a small proportion of the total retail price of coffee, but they supposedly benefit by using the commodity market, and through futures/options they secure stability.</p>
+            
+            <p>This all of course sounds nice and fair, but futures help only the largest of farmers - their very own structure is unequal. Take the example of Robusta future contracts. To fill one of these contracts at London's ICE, farmers need to produce 10 metric tons (10,000 kg) of coffee, however, an average Robusta farmer in Vietnam, with 1 to 3 hectares of farm land, finds it impossible to produce that amount of coffee and, thus, they are structurally locked out. As a result, most of the 12.5 million coffee farmers around the world are unable to participate in the formal futures market. Therefore, these locked-out farmers are mainly involved, through cooperatives, in the spot market. Coyotes drive up to the farms and pay the spot price for coffee, a price that is itself determined by the big market exchanges in London and New York, where, as seen in Figure 6, it follows the future's market expectations. Thus, the price at which farmers sell their coffee is completely out of their control, and with weather patterns changing drastically, their costs have higher variance than ever before - at times, the farmer has no option but to sell at a losing price.</p>
+        </section>
+    </div>
+
+    <div class="full-width-container fade-in">
+        <div id="vis-finance" class="chart-wrapper"></div>
+        <p class="chart-caption">Figure 6: The Power of the Hedge. Net financial positions vs. Coffee Price.</p>
+    </div>
+
+    <div class="container">
+        <section class="fade-in">
+            <p>Figure 6 shows us the impact of the futures market on the price of coffee. Its clear to see that when bets are long the price rises, and the reverse happens when bets are short. As funds' net long exposure increases the price of Robusta coffee fueled by fears of supply-side weather destruction mounts too. The sensible question to ask now is: Who wins in this market?</p>
+            
+            <p>The answer is clear. The entities using these hedging tools benefit by setting the price of coffee on their own speculation, more importantly the future contract's inherently unequal design makes it impossible for small farmers to participate in the market. Thus we have an unequal market, divided in two different sectors. On the one hand we have the Starbucks of the world who purchase their primary good from major industrialized farmers - those who participate in the futures market. And on the other hand we have the millions of small farmers and cooperatives that sell their beans on the spot market - with prices dictated by the unreachable futures market.</p>
+        </section>
+
+        <section class="fade-in">
+            <h2>Chapter 5 - What's Next?</h2>
+            <p>The coffee market is changing, in the following years and decades it will be completely transformed. The coffee industry will become ever more so industrialized, pushing coffee out of the mountains and into the plains, where big corporations will absorb all artisanal farms. Indeed inequality in the market will cease to exist ... for the wrong reasons. While this is a cultural loss, it seems to be a necessary step for the industry. Climate change will make it harder than ever to cultivate coffee, with small farms the industry will be ill equipped to fill the world's incessant demand for coffee. It could also be that the role of technology, artificial intelligence and biotechnology will deeply transform the market. Atomo, for example, an american startup has reverse engineered coffee to produce a coffee-less coffee (whatever that means)</p>
+            <p>What remains clear is that coffee as an art form, artisanal coffee once accessible around the world will become a rare occurrence. Still, coffee will continue to power the world.</p>
+        </section>
+    </div>
+
+    <div class="container">
+        <section class="fade-in">
+            <h2>References</h2>
+            
+            <h3 style="font-size: 1.3rem; border-bottom: none; margin-bottom: 10px;">Dataset References</h3>
+            <ul style="font-size: 0.9rem; line-height: 1.6; list-style-type: none; padding-left: 0;">
+                <li style="margin-bottom: 10px;">Commitments of Traders Reports. (2024). Ice.com. <a href="https://www.ice.com/report/122" target="_blank">https://www.ice.com/report/122</a></li>
+                <li style="margin-bottom: 10px;">London Robusta Coffee Futures Historical Prices - Investing.com. (2025, November 20). Investing.com. <a href="https://www.investing.com/commodities/london-coffee-historical-data" target="_blank">https://www.investing.com/commodities/london-coffee-historical-data</a></li>
+                <li style="margin-bottom: 10px;">Stockholm, E. (2025). Coffee Data Set. Kaggle.com. <a href="https://www.kaggle.com/datasets/escstockholm/coffee-data-set?select=Coffee_Data_Set.csv" target="_blank">https://www.kaggle.com/datasets/escstockholm/coffee-data-set</a></li>
+                <li style="margin-bottom: 10px;">ICO Coffee Dataset Worldwide. (2025). Kaggle.com. <a href="https://www.kaggle.com/datasets/yamaerenay/ico-coffee-dataset-worldwide?select=total-production.csv" target="_blank">https://www.kaggle.com/datasets/yamaerenay/ico-coffee-dataset-worldwide</a></li>
+            </ul>
+
+            <h3 style="font-size: 1.3rem; border-bottom: none; margin-bottom: 10px;">General References</h3>
+            <ul style="font-size: 0.9rem; line-height: 1.6; list-style-type: none; padding-left: 0;">
+                <li style="margin-bottom: 10px;">Agriculture Institute. (2023). Optimal Climate Conditions for Robusta Coffee Cultivation - Agriculture Notes by Agriculture.Institute. [online] Available at: https://agriculture.institute/crop-production-technology/optimal-climate-conditions-robusta-coffee/. (Accessed: November 2025)</li>
+                <li style="margin-bottom: 10px;">Brewer, C. and Harrower, M. (2024). ColorBrewer: Color Advice for Maps. [online] Colorbrewer2.org. Available at: https://colorbrewer2.org/#type=sequential&scheme=YlOrBr&n=5. (Accessed: November 2025)</li>
+                <li style="margin-bottom: 10px;">Byrareddy, V., Kouadio, L., Mushtaq, S., Kath, J. and Stone, R. (2021). Coping with drought: Lessons learned from robusta coffee growers in Vietnam. Climate Services, 22, p.100229. doi:https://doi.org/10.1016/j.cliser.2021.100229. (Accessed: November 2025)</li>
+                <li style="margin-bottom: 10px;">Coffeeandhealth.org. (2025). Coffee farming - Coffee & Sustainability. [online] Available at: https://www.coffeeandhealth.org/about-coffee/coffee-farming. (Accessed: November 2025)</li>
+                <li style="margin-bottom: 10px;">Fairtrade.net. (2019). Available at: https://riskmap.fairtrade.net/commodities/coffee.</li>
+                <li style="margin-bottom: 10px;">Hhc.earth. (2025). Why the climate crisis affects the price of your cup of coffee - Hedgehog. [online] Available at: https://www.hhc.earth/knowledge-base/articles/why-the-climate-crisis-affects-the-price-of-your-cup-of-coffee. (Accessed: November 2025)</li>
+                <li style="margin-bottom: 10px;">Sitiodatorre.com.br. (2025). Sítio da Torre – O melhor café para você. [online] Available at: https://sitiodatorre.com.br/. (Accessed: November 2025)</li>
+                <li style="margin-bottom: 10px;">USDA (2024). Coffee | USDA Foreign Agricultural Service. [online] Usda.gov. Available at: https://www.fas.usda.gov/data/production/commodity/0711100. (Accessed: November 2025)</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; IPDV AE2 - Explorable Visual Data Stories</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
