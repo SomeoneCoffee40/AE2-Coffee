@@ -10,6 +10,7 @@ This is a data storytelling project where you will discover a different side of 
 
 ### How to Run
 You can look at the Github Page-hosted site here: 
+
 OR....you can
 1. Download all the relevant datasets and place them in the directory.
 2. Run data_prep.ipynb, a new directory, Clean_Data, will appear.
